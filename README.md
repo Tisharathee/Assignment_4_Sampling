@@ -1,4 +1,4 @@
-                                      #Sampling Techniques for Imbalanced Credit Card Dataset
+# Sampling Techniques for Imbalanced Credit Card Dataset
 
 Name: Tanishka
 
@@ -6,7 +6,7 @@ Roll No: 102303245
 
 Assignment Title: Sampling Techniques on Imbalanced Dataset
 
-Objective
+## Objective
 
 The main objective of this assignment is to understand the importance of sampling techniques in handling imbalanced datasets and to analyze how different sampling strategies influence the 
 
@@ -14,7 +14,7 @@ performance of various machine learning models.
 
 Imbalanced datasets are common in real-world problems such as fraud detection, spam detection, and medical diagnosis, where one class appears much less frequently than the other.
 
-Dataset Description
+## Dataset Description
 
 The dataset used is a Credit Card Fraud Detection dataset.
 
@@ -30,7 +30,7 @@ Target Column: Class
 
 Initially, the dataset is highly imbalanced with very few fraud cases compared to legitimate transactions.
 
-Problem with Imbalanced Data
+## Problem with Imbalanced Data
 
 In an imbalanced dataset:
 
@@ -53,7 +53,7 @@ To overcome this issue, different sampling techniques are applied to balance the
 | NearMiss             | Selects closest majority samples     |
 | SMOTE + Tomek        | Removes overlapping noisy samples    |
 
-Machine Learning Models Used
+## Machine Learning Models Used
 
 Five machine learning models were trained on each sampled dataset:
 
@@ -65,7 +65,8 @@ Five machine learning models were trained on each sampled dataset:
 | M4       | K-Nearest Neighbors |
 | M5       | Naive Bayes         |
 
-Accuracy Results (Actual Output):
+## Accuracy Results (Actual Output):
+
 
 | Model               | Random Under | Random Over | SMOTE      | NearMiss   | SMOTE+Tomek |
 | ------------------- | ------------ | ----------- | ---------- | ---------- | ----------- |
@@ -75,13 +76,14 @@ Accuracy Results (Actual Output):
 | KNN                 | 82.71        | 85.98       | 85.98      | 83.18      | 85.99       |
 | Naive Bayes         | 83.18        | 86.45       | 86.45      | 81.78      | 83.09       |
 
-Best Performing Results
+
+## Best Performing Results
 
 Highest Accuracy Overall
 
- Random Forest (M3) achieved 100% accuracy with:
+**Random Forest (M3) achieved 100% accuracy with:**
 
-Random UnderSampling
+**Random UnderSampling**
 
 Random OverSampling
 
@@ -97,11 +99,11 @@ Worst Performing Technique
 
 NearMiss showed relatively lower accuracy for KNN and Naive Bayes due to aggressive removal of majority samples.
 
-Conclusion
+## Conclusion
 
 This experiment demonstrates that sampling techniques significantly improve machine learning performance on imbalanced datasets.
 
-Key observations:
+**Key observations:**
 
 Oversampling methods such as Random OverSampling and SMOTE provide the most stable results.
 
@@ -111,7 +113,7 @@ Undersampling methods like NearMiss may lead to information loss.
 
 Hence, selecting an appropriate sampling strategy combined with a strong model is essential for real-world imbalanced classification problems like fraud detection.
 
-Technologies Used
+## Technologies Used
 
 Python
 
